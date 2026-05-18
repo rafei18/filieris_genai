@@ -1,0 +1,4 @@
+.env/
+filieris_env/
+/data
+__pycache__/
