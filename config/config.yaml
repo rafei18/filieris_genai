@@ -1,0 +1,19 @@
+astra_db:
+  collection_name: "ecommercedata"
+
+embedding_model:
+  provider: "google"
+  model_name: "models/text-embedding-004"
+
+retriever:
+  top_k: 10
+
+llm:
+  provider: "google"
+  model_name: "deepseek-r1-distill-llama-70b" 
+
+chroma:
+  persist_directory: "vector_store/chroma_db"
+
+retriever:
+  top_k: 5

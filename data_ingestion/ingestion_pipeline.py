@@ -6,8 +6,12 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
-
+import os
+#from utils.model_loader import ModelLoader
 from utils.model_loader import ModelLoader
+
+
+print(os.getcwd())
 
 
 class DataIngestion:
@@ -29,7 +33,7 @@ class DataIngestion:
 
         self.pdf_path = self._get_pdf_path()
 
-        self.persist_directory = "vector_store/chroma_db"
+        self.persist_directory = "vector_store/embeddings_pdf_63pages"
 
         self.embedding_model = self.model_loader.load_embeddings()
 
