@@ -7,7 +7,8 @@ from langchain_core.documents import Document
 from langchain_chroma import Chroma
 
 from utils.model_loader import ModelLoader
-from config.config_loader import load_config
+#from config.config_loader import load_config
+from utils.config_loader import load_config
 
 
 class Retriever:
@@ -41,7 +42,7 @@ class Retriever:
                 embedding_function=self.embedding_model
             )
 
-            print("ChromaDB loaded successfully.")
+            print("chromaDB loaded successfully")
 
         return self.vdb
 
@@ -57,14 +58,14 @@ class Retriever:
                 search_kwargs={"k": top_k}
             )
 
-            print(f"Retriever loaded successfully with top_k={top_k}")
+            print(f"retriever loaded successfully with top_k={top_k}")
 
         return self.retriever
 
     def retrieve_documents(self, query: str) -> List[Document]:
 
         """
-        Retrieve relevant chunks for a query.
+        retrieve k relevant chunks for 
         """
         retriever = self.load_retriever()
         results = retriever.invoke(query)

@@ -1,10 +1,12 @@
 langchain_astradb
 pandas
 langchain_google_genai
-fastapi 
+fastapi==0.110.0
+starlette==0.36.3
+
 uvicorn 
 python-multipart
-jinja2
+jinja2==3.1.3
 python-dotenv 
 langchain 
 langchain_core 
@@ -12,8 +14,8 @@ langchain_groq
 langchain_chroma
 sentence_transformers
 langchain_huggingface
-unstructured[pdf]
-"unstructured[pdf]" pillow pypdf
+unstructured
+
 unstructured_inference
 tesseract 
 langchain-text-splitters
