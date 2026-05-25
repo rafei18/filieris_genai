@@ -1,11 +1,24 @@
-langchain_community
-langchain_huggingface
-langchain
+langchain_astradb
 pandas
-pypdf
-langchain_text_splitters
+langchain_google_genai
+fastapi 
+uvicorn 
+python-multipart
+jinja2
+python-dotenv 
+langchain 
+langchain_core 
 langchain_groq
-langchain_core
-sentence-transformers
 langchain_chroma
+sentence_transformers
+langchain_huggingface
+unstructured[pdf]
+"unstructured[pdf]" pillow pypdf
+unstructured_inference
+tesseract 
+langchain-text-splitters
+pymupdf4llm
+rank-bm25
 
+
+-e .

@@ -24,7 +24,10 @@ app.mount(
     name="static"
 )
 
-templates = Jinja2Templates(directory="templates")
+#templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(
+    directory=os.path.join(BASE_DIR, "templates")
+)
 
 app.add_middleware(
     CORSMiddleware,
