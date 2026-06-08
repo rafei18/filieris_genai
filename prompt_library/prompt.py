@@ -17,6 +17,5 @@ Si possible de donné le numero de la page,
 Si l'information n'est pas présente dans le contexte,
 réponds:
 "Information non trouvée dans les documents."
-this
 """
 }
