@@ -7,9 +7,6 @@ from langchain_groq import ChatGroq
 from sentence_transformers import SentenceTransformer
 from langchain_huggingface import HuggingFaceEmbeddings
 
-
-
-
 from langchain_huggingface import HuggingFaceEmbeddings
 
 
